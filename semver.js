@@ -1198,8 +1198,6 @@ function outside(version, range, hilo, loose) {
 }
 
 // Use the define() function if we're in AMD land
-if (typeof define === 'function' && define.amd) {
-  define('semver', [], function(){
-  	return { default: exports };
-  });
-}
+define('semver', [], function(){
+	return { default: exports };
+});
